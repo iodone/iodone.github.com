@@ -1,9 +1,9 @@
 baseURL: "https://iodone.github.io"
 title: Flow
 theme: hugo-theme-ladder
-description: "Time flows like a song, slipping through the hourglass of fingertips. With a heartfelt touch, I inscribe every moment, letting life bloom with the poetic radiance."
+description: "记录点滴思考，分享生活感悟"
 homepage: "https://iodone.github.io"
-defaultContentLanguage: "en"
+# defaultContentLanguage: "en"
 enableRobotsTXT: true
 paginate: 10
 hasCJKLanguage: true
@@ -17,28 +17,27 @@ params:
   avatarURL: /images/avatar.png
   author: Meta42
   authorDescription: A little fish yearning for freedom and swimming against the current
-  info: Time flows like a song, slipping through the hourglass of fingertips. With a heartfelt touch, I inscribe every moment, letting life bloom with the poetic radiance.
-  favicon: /images/avatar.ico
+  info: 记录点滴思考，分享生活感悟
   options:
     showDarkMode: true
     enableImgZooming: true
     enableMultiLang: true
     showMetaTags: true
   darkModeTheme: data-dark-mode
-  sponsors:
-    title: Sponsors
-    description: Support me by becoming a sponsor
-    # buymeaCoffee:
-    #   enable: true
-    #   url: https://www.buymeacoffee.com/iguangzhengli
-    #   buttom_api: https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=iguangzhengli&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff
-    #   qr: https://storage.guangzhengli.com/images/buymeacoffee_sponsors.png
-    # wechat:
-    #   enable: true
-    #   qr: https://storage.guangzhengli.com/images/alipay_sponsors.jpeg
-    # alipay:
-    #   enable: true
-    #   qr: https://storage.guangzhengli.com/images/weixin_sponsors.jpeg
+  # sponsors:
+  #   title: Sponsors
+  #   description: Support me by becoming a sponsor
+  # buymeaCoffee:
+  #   enable: true
+  #   url: https://www.buymeacoffee.com/iguangzhengli
+  #   buttom_api: https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=iguangzhengli&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff
+  #   qr: https://storage.guangzhengli.com/images/buymeacoffee_sponsors.png
+  # wechat:
+  #   enable: true
+  #   qr: https://storage.guangzhengli.com/images/alipay_sponsors.jpeg
+  # alipay:
+  #   enable: true
+  #   qr: https://storage.guangzhengli.com/images/weixin_sponsors.jpeg
   comments:
     giscus:
       enable: true
@@ -53,13 +52,13 @@ params:
       enable: false
       repo: iodone/iodone.github.com
       issueTerm: pathname
-  analytics:
-    # google:
-    #   SiteVerificationTag: RL6kP6-6yjRPyYGLeqBQ2JIX6QQAz7A6gHZb7bHlZnU
-    umami:
-      enable: false
-      website_id: 24349452-bff6-4e96-93bf-6c764e191b26
-      url: https://umami-ochre-nu.vercel.app/hugo-ladder.js
+  # analytics:
+  # google:
+  #   SiteVerificationTag: RL6kP6-6yjRPyYGLeqBQ2JIX6QQAz7A6gHZb7bHlZnU
+  # umami:
+  #   enable: false
+  #   website_id: 24349452-bff6-4e96-93bf-6c764e191b26
+  #   url: https://umami-ochre-nu.vercel.app/hugo-ladder.js
   social:
     - name: GitHub
       pre: >-
@@ -72,45 +71,22 @@ params:
         1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44
         7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
       url: "https://github.com/iodone"
-languages:
-  en:
-    languageName: English
-    menu:
-      main:
-        - name: Blog
-          url: /blog
-          weight: 1
-        - name: Tags
-          url: /tags
-          weight: 2
-        - name: Archive
-          url: /archives
-          weight: 3
-        # - name: Monitor
-        #   url: https://umami-ochre-nu.vercel.app/share/o3zAba1V/guangzhengli
-        #   weight: 6
-  # zh:
-  #   languageName: 中文
-  #   author: Meta42
-  #   authorDescription: 一条向往自由且逆流而上的小鱼
-  #   info: 记录自己的点滴思考，分享自己的生活感悟
-  #   menu:
-  #     main:
-  #       - name: 文章
-  #         url: /blog
-  #         weight: 1
-  #       - name: 生活
-  #         url: /art
-  #         weight: 2
-  #       - name: 标签
-  #         url: /tags
-  #         weight: 3
-  #       - name: 归档
-  #         url: /archives
-  #         weight: 4
-  #       # - name: 统计
-  #       #   url: https://umami-ochre-nu.vercel.app/share/o3zAba1V/guangzhengli
-  #       #   weight: 5
+
+menu:
+  main:
+    - name: Blog
+      url: /blog
+      weight: 1
+    - name: Tags
+      url: /tags
+      weight: 2
+    - name: Archive
+      url: /archives
+      weight: 3
+    # - name: Monitor
+    #   url: https://umami-ochre-nu.vercel.app/share/o3zAba1V/guangzhengli
+    #   weight: 6
+
 taxonomies:
   series: series
   tag: tags
